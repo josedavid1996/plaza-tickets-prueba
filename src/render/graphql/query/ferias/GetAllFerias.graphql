@@ -1,0 +1,19 @@
+query GetAllFerias {
+  GetAllFerias {
+    data {
+      titulo
+      tipoColiseo
+      terminosCondiciones
+      slug
+      imagenPrincipal {
+        titulo
+        id
+        url
+        created_at
+      }
+      feriaId
+      descripcionLarga
+      descripcionCorta
+    }
+  }
+}

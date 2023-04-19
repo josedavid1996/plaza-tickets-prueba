@@ -1,0 +1,27 @@
+query GetAllEntradasUsuarioDocumento(
+  $eventoId: Int
+  $tipoDocumento: String
+  $numeroDocumento: String
+) {
+  GetAllEntradasUsuarioDocumento(
+    eventoId: $eventoId
+    tipoDocumento: $tipoDocumento
+    numeroDocumento: $numeroDocumento
+  ) {
+    asiento
+    codigo
+    fecha
+    hora
+    Evento {
+      descripcionCorta
+      estado
+      eventoId
+      fecha
+      feriaId
+      hora
+      slug
+      titulo
+    }
+    nombres
+  }
+}

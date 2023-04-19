@@ -1,0 +1,12 @@
+query GetAllEventos($feriaSlug: String, $estado: String) {
+  GetAllEventos(feriaSlug: $feriaSlug, estado: $estado) {
+    numeroTotal
+    data {
+      titulo
+      fecha
+      eventoId
+      descripcionCorta
+      slug
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import './assets/fonts/Poppins/index.css';
+@import 'react-toastify/dist/ReactToastify.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+} /* `poppins` is defining a custom font family for the theme. It is using the Poppins font as the
+primary font and falling back to the default sans-serif font family defined in the
+`defaultTheme`. */
+
+.fondo {
+  background-image: linear-gradient(rgb(255, 87, 51) 30%, rgb(199, 0, 57) 100%);
+}
+
+input::placeholder {
+  color: #c70039;
+  font-size: 15px;
+}
+
+.fondo-layout {
+  background-image: linear-gradient(180deg, #ff5733 30%, #f2295b 100%);
+}
+.fondo-card {
+  background-image: linear-gradient(180deg, #ffffff 0%, #ededed 100%);
+}

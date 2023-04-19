@@ -1,0 +1,9 @@
+mutation BuscarPersona($input: PersonaInput!) {
+  BuscarPersona(input: $input) {
+    id
+    nombres
+    apellidos
+    tipoDocumento
+    numeroDocumento
+  }
+}

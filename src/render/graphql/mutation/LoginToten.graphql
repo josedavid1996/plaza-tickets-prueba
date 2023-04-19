@@ -1,0 +1,9 @@
+mutation LoginToten($input: LoginTotenInput!) {
+  LoginToten(input: $input) {
+    totenId
+    usuario
+    nombres
+    token
+    estado
+  }
+}
